@@ -2,7 +2,7 @@ const Classroom = require('../models').Classroom;
 const Student = require('../models').Student;
 
 module.exports = {
-  list(req, res) {
+  list(req, res, next) {
     return Classroom
       .findAll({
         include: [{
@@ -15,7 +15,7 @@ module.exports = {
         ],
       })
       .then((classrooms) => res.status(200).send(classrooms))
-      .catch((error) => { res.status(400).send(error); });
+      .catch((error) => { return next(error)});
   },
 
   getById(req, res) {

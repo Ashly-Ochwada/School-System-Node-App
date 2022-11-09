@@ -5,11 +5,11 @@ module.exports ={
   development: {
     username: DB_USERNAME,
     password: DB_PASSWORD,
-    database: "sequelize_database_dev",
+    // use_env_variable: true,
+    database: "nodeapp",
     host: DB_HOST,
     dialect: "postgres"
   },
-
   
   test: {
     username: DB_USERNAME,
@@ -26,4 +26,14 @@ module.exports ={
     dialect: "postgres"
   }
 }
+
+// const { Pool } = require('pg')
+
+// const pool = new Pool({
+//   user: 'nodeappuser',
+//   database: 'nodeapp',
+//   password: 'nodepassword',
+//   port: 5432,
+//   host: 'localhost',
+// })
 
