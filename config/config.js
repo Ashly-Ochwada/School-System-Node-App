@@ -27,13 +27,5 @@ module.exports ={
   }
 }
 
-// const { Pool } = require('pg')
 
-// const pool = new Pool({
-//   user: 'nodeappuser',
-//   database: 'nodeapp',
-//   password: 'nodepassword',
-//   port: 5432,
-//   host: 'localhost',
-// })
 

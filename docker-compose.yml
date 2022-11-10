@@ -3,11 +3,11 @@ services:
   database:
     image: "postgres:14"
     environment:
-      POSTGRES_USER: myprojectuser
-      POSTGRES_PASSWORD: password
-      POSTGRES_DB: myproject
+      POSTGRES_USER: student
+      POSTGRES_PASSWORD: nodepassword
+      POSTGRES_DB: nodeapp
     ports:
-      - "5432:5432"
+      - "3000:3000"
     volumes:
       - database-data:/var/lib/postgresql/data/
 volumes:
