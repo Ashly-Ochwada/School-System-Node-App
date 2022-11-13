@@ -30,13 +30,11 @@
 
 
 require('dotenv').config();
-// const { DB_HOST, DB_USERNAME, DB_PASSWORD } = process.env;
 
 module.exports ={
   development: {
     username: process.env.DB_USERNAME,
     password: process.env.DB_PASSWORD,
-    // use_env_variable: true,
     database: "nodeapp",
     host: process.env.DB_HOST,
     dialect: "postgres"
@@ -49,14 +47,6 @@ module.exports ={
     host: process.env.DB_HOST,
     dialect: "postgres"
   },
-  // production: {
-  //   username: process.env.DB_USERNAME,
-  //   password: process.env.DB_PASSWORD,
-  //   use_env_variable: true,
-  //   database: "nodeapp",
-  //   host: process.env.DB_HOST,
-  //   dialect: "postgres"
-  // }
   production: {
     use_env_variable: process.env.DATABASE_URL,
     dialect: "postgres"
