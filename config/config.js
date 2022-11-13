@@ -48,7 +48,7 @@ module.exports ={
     dialect: "postgres"
   },
   production: {
-    use_env_variable: process.env.DATABASE_URL,
+    use_env_variable: process.env.HEROKU_POSTGRESQL_AMBER_URL,
     dialect: "postgres"
   }
 }
