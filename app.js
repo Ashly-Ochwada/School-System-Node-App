@@ -40,7 +40,7 @@ app.listen(port, () => {
   console.log(`Server is running on port ${port}.`);
 });
 
-render('error');
+// render('error');
 
 module.exports = app;
 
